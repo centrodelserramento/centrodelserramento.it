@@ -76,8 +76,13 @@
             <h2 class="section-title">Contattaci</h2>
             <div class="contact-grid">
                 <div class="contact-info">
-                    <p><strong>Indirizzo:</strong> {{ .Site.Data.site.contact.address }}</p>
-                    <p><strong>Telefono:</strong> {{ .Site.Data.site.contact.phone }}</p>
+                    {{ range .Site.Data.site.contact.showrooms }}
+                    <div class="showroom">
+                        <h3>{{ .name }}</h3>
+                        <p><strong>Indirizzo:</strong> {{ .address }}</p>
+                        <p><strong>Telefono:</strong> {{ .phone }}</p>
+                    </div>
+                    {{ end }}
                     <p><strong>Email:</strong> {{ .Site.Data.site.contact.email }}</p>
                     <p><strong>Orari:</strong><br>{{ .Site.Data.site.contact.hours | safeHTML }}</p>
                 </div>

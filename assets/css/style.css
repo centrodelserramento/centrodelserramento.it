@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #003366;
-    --accent-color: #e63946;
-    --text-dark: #1a1a1a;
+    --primary-color: #1D1D1B;
+    --accent-color: #E30613;
+    --text-dark: #333333;
     --text-muted: #666666;
     --light-bg: #f8f9fa;
     --white: #ffffff;
@@ -105,8 +105,19 @@ nav {
 }
 
 .btn-primary:hover {
-    background: #d62828;
+    background: #c20510;
     transform: translateY(-2px);
+}
+
+.showroom {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.showroom h3 {
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
 }
 
 section {

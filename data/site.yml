@@ -41,7 +41,12 @@ products:
     image: "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&w=600&q=80"
 
 contact:
-  address: "Via Donizetti 1, 20020 Lainate (MI)"
-  phone: "+39 02 93570624"
+  showrooms:
+    - name: "Showroom Lainate"
+      address: "Via Rho, 27 - 20020 LAINATE (MI)"
+      phone: "+39 02 93570624"
+    - name: "Showroom Milano"
+      address: "Via Legnano, 32 - 20121 MILANO"
+      phone: "+39 02 6554832"
   email: "info@centrodelserramento.it"
   hours: "Lun - Ven: 08:30 - 12:30, 14:00 - 18:30 | Sab: 09:00 - 12:30"
