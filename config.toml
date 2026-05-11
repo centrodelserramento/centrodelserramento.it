@@ -1,0 +1,4 @@
+baseURL = 'https://centrodelserramento.github.io/centrodelserramento.it/'
+languageCode = 'it-it'
+title = 'Centro del Serramento'
+theme = []

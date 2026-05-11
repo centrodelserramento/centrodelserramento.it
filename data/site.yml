@@ -1,0 +1,47 @@
+title: "Centro del Serramento"
+tagline: "Dal 1972 a tua disposizione"
+hero:
+  title: "Centro del Serramento"
+  subtitle: "Qualità e professionalità dal 1972. Chiusure di sicurezza, finestre in PVC e legno, porte interne."
+  cta: "Richiedi un Preventivo"
+  image: "https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?auto=format&fit=crop&w=1920&q=80"
+
+brands:
+  - name: "Dierre"
+    logo: "https://via.placeholder.com/150x50?text=DIERRE"
+  - name: "Finstral"
+    logo: "https://via.placeholder.com/150x50?text=FINSTRAL"
+  - name: "Garofoli"
+    logo: "https://via.placeholder.com/150x50?text=GAROFOLI"
+  - name: "Velux"
+    logo: "https://via.placeholder.com/150x50?text=VELUX"
+
+services:
+  - title: "Pronta Consegna"
+    description: "Ampio magazzino per soluzioni immediate."
+    icon: "box"
+  - title: "Soluzioni su Misura"
+    description: "Progettiamo la soluzione ideale per ogni ambiente."
+    icon: "measure"
+  - title: "Posa Qualificata"
+    description: "Installazione professionale certificata."
+    icon: "hammer"
+  - title: "Assistenza Tecnica"
+    description: "Supporto post-vendita dedicato."
+    icon: "headset"
+
+products:
+  - title: "Finestre per tetti"
+    image: "https://images.unsplash.com/photo-1505330622279-bf7d7fc918f4?auto=format&fit=crop&w=600&q=80"
+  - title: "Finestre in PVC"
+    image: "https://images.unsplash.com/photo-1591825729269-caeb344f6df2?auto=format&fit=crop&w=600&q=80"
+  - title: "Chiusure di Sicurezza"
+    image: "https://images.unsplash.com/photo-1510074377623-8cf13fb86c08?auto=format&fit=crop&w=600&q=80"
+  - title: "Porte Interne"
+    image: "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&w=600&q=80"
+
+contact:
+  address: "Via Donizetti 1, 20020 Lainate (MI)"
+  phone: "+39 02 93570624"
+  email: "info@centrodelserramento.it"
+  hours: "Lun - Ven: 08:30 - 12:30, 14:00 - 18:30 | Sab: 09:00 - 12:30"
