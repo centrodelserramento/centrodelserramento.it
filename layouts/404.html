@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Non Trovata - {{ .Site.Data.site.title }}</title>
+    {{ $style := resources.Get "css/style.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .error-container {
+            min-height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+        }
+        .error-code {
+            font-size: 6rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+        .error-message {
+            max-width: 600px;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo"><a href="{{ "/" | absURL }}" style="text-decoration: none; color: inherit;">{{ .Site.Data.site.title }}</a></div>
+        </nav>
+    </header>
+
+    <main class="container error-container">
+        <div class="error-code">404</div>
+        <h1>Pagina Non Trovata</h1>
+        <div id="dynamic-message" class="error-message">
+            <p>Siamo spiacenti, la pagina che stai cercando non è disponibile.</p>
+        </div>
+        <div class="cta-area">
+            <a href="{{ "/" | absURL }}" class="btn btn-primary">Torna alla Home</a>
+            <a href="{{ "/#contact" | absURL }}" class="btn" style="border: 2px solid var(--accent-color); color: var(--accent-color); margin-left: 1rem;">Contattaci</a>
+        </div>
+    </main>
+
+    <footer class="bg-dark" style="position: fixed; bottom: 0; width: 100%;">
+        <div class="container footer-content">
+            <p>&copy; {{ now.Format "2006" }} {{ .Site.Data.site.title }}. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+
+    <script src="{{ "js/404-handler.js" | absURL }}"></script>
+</body>
+</html>
