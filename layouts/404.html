@@ -34,7 +34,7 @@
 <body>
     <header>
         <nav class="container">
-            <div class="logo"><a href="{{ "/" | absURL }}" style="text-decoration: none; color: inherit;">{{ .Site.Data.site.title }}</a></div>
+            <div class="logo"><a href="{{ .Site.BaseURL }}" style="text-decoration: none; color: inherit;">{{ .Site.Data.site.title }}</a></div>
         </nav>
     </header>
 
@@ -45,8 +45,8 @@
             <p>Siamo spiacenti, la pagina che stai cercando non è disponibile.</p>
         </div>
         <div class="cta-area">
-            <a href="{{ "/" | absURL }}" class="btn btn-primary">Torna alla Home</a>
-            <a href="{{ "/#contact" | absURL }}" class="btn" style="border: 2px solid var(--accent-color); color: var(--accent-color); margin-left: 1rem;">Contattaci</a>
+            <a href="{{ .Site.BaseURL }}" class="btn btn-primary">Torna alla Home</a>
+            <a href="{{ .Site.BaseURL }}#contact" class="btn" style="border: 2px solid var(--accent-color); color: var(--accent-color); margin-left: 1rem;">Contattaci</a>
         </div>
     </main>
 
