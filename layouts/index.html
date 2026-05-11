@@ -14,7 +14,11 @@
 <body>
     <header>
         <nav class="container">
-            <div class="logo">{{ .Site.Data.site.title }}</div>
+            <div class="logo">
+                <a href="#home">
+                    <img src="{{ .Site.Data.site.logo | absURL }}" alt="{{ .Site.Data.site.title }}" style="height: 50px;">
+                </a>
+            </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#products">Prodotti</a></li>

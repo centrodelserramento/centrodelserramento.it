@@ -1,6 +1,6 @@
 :root {
     --primary-color: #1D1D1B;
-    --accent-color: #E30613;
+    --accent-color: #F37021;
     --text-dark: #333333;
     --text-muted: #666666;
     --light-bg: #f8f9fa;
@@ -32,7 +32,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    padding: 1rem 0;
+    padding: 0.5rem 0;
 }
 
 nav {
@@ -105,7 +105,7 @@ nav {
 }
 
 .btn-primary:hover {
-    background: #c20510;
+    background: #d65b12;
     transform: translateY(-2px);
 }
 
